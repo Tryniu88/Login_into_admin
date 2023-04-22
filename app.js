@@ -13,7 +13,7 @@ async function getuser() {
     localStorage.setItem("upr", JSON.stringify(json[0]));
   } else {
     localSt;
-    orage.setItem("upr", "false");
+    localStorage.setItem("upr", "false");
   }
 }
 
