@@ -12,7 +12,6 @@ async function getuser() {
   if (json[0] != undefined) {
     localStorage.setItem("upr", JSON.stringify(json[0]));
   } else {
-    localSt;
     localStorage.setItem("upr", "false");
   }
 }
