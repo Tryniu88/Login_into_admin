@@ -1,0 +1,22 @@
+body {
+  background-color: azure;
+}
+
+#user {
+  width: 150px;
+  height: 18px;
+  border-radius: 25px;
+}
+
+#pass {
+  width: 150px;
+  height: 18px;
+  border-radius: 25px;
+}
+
+#butt {
+  width: 80px;
+  height: 18px;
+  border-radius: 35px;
+  cursor: pointer;
+}
