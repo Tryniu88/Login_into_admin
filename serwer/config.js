@@ -13,8 +13,7 @@ var con = mysql.createConnection({
   host: "localhost",
 });
 
-con.connec;
-t(function (err) {
+con.connect(function (err) {
   if (err) {
     console.log(err);
   } else {
