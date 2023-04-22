@@ -8,9 +8,9 @@ app.use(cors());
 
 var con = mysql.createConnection({
   database: "kartkawka",
-  user: "user",
-  host: "localhost",
+  user: "root",
   password: "",
+  host: "localhost",
 });
 
 con.connect(function (err) {
@@ -24,7 +24,7 @@ con.connect(function (err) {
 app.get("/login/:user/:pass", function (req, res) {
   const user = req.params.user;
   const pass = req.params.pass;
-  const sql = `SELECT upr FROM kartkawkatab WHERE user = "${user}" AND password = "${pass}`;
+  const sql = `SELECT upr FROM kartkawkatab WHERE user = "${user}" AND password = "${pass}"`;
 
   con.query(sql, function (err, result, fields) {
     if (err) {
