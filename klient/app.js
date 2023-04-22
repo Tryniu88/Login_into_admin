@@ -2,7 +2,7 @@ async function getuser() {
   document.getElementById("user").value;
   document.getElementById("pass").value;
 
-  const data = await fetch(`https://localhost/login/user/pass`);
+  const data = await fetch(`https://localhost3000/login/user/pass`);
   const json = await data.json();
   console.log(json);
 
