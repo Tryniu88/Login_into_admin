@@ -18,7 +18,7 @@ function checkuser() {
 
   const url = window.location.href;
 
-  if (user != "admin" && url.includes("admin.html")) {
+  if (user.upr != "admin" && url.includes("admin.html")) {
     window.location.href = "index.html";
   }
 }
