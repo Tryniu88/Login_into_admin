@@ -3,27 +3,28 @@ const cors = require("cors");
 const mysql = require("mysql");
 const port = 3000;
 const app = express();
-
 app.use(cors());
 
 var con = mysql.createConnection({
-  host: "localhost",
   user: "root",
+  host: "localhost",
   database: "kartkawka",
   password: "",
 });
+
 con.connect(function (err) {
   if (err) {
-    console.log;
+    console.log(err);
   } else {
-    console.log("Connected");
+    console.log("Connected!");
   }
 });
 
 app.get("/login/:user/:pass", function (req, res) {
   const user = req.params.user;
   const pass = req.params.pass;
-  const sql = `SELECT upr from kartkawkatab WHERE user = "${user}" AND password = "${pass}"`;
+
+  const sql = `SELECT upr FROM kartkawkatab WHERE user = "${user}" AND password = "${pass}"`;
 
   con.query(sql, function (err, result, fields) {
     if (err) {
