@@ -1,4 +1,4 @@
-async function getuser() {
+async function getUser() {
   const user = document.getElementById("user").value;
   const pass = document.getElementById("pass").value;
 
@@ -13,9 +13,8 @@ async function getuser() {
   }
 }
 
-function checkuser() {
+function checkUser() {
   const user = JSON.parse(localStorage.getItem("upr"));
-
   const url = window.location.href;
 
   if (user.upr != "admin" && url.includes("admin.html")) {
