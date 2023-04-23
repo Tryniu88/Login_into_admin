@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+    </head>
+    <body>
+      <li><a href="index.html">Główna</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="login.html">Login</a></li>
 
-    <title>Main Page</title>
-  </head>
-  <body id="body">
-    <li><a href="index.html">Main Page</a></li>
+      <div>
+        <input type="text" id="user" />
+        <input type="password" id="pass" />
+        <button onclick="getuser()">ZALOGUJ</button>
+      </div>
 
-    <li><a href="login.html">Login</a></li>
-    <li><a href="admin.html">Admin</a></li>
-
-    <input id="user" type="text" />
-    <input id="pass" type="password" />
-    <button id="butt" onclick="getuser()">Login</button>
-
-    <script src="app.js"></script>
-  </body>
+      <script src="app.js"></script>
+    </body>
+  </html>
 </html>
