@@ -21,3 +21,5 @@ function checkUser() {
     window.location.href = "index.html";
   }
 }
+
+//unowocześcnic storne
