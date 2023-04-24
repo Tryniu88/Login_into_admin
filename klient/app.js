@@ -23,3 +23,4 @@ function checkUser() {
 }
 
 //unowocześcnic storne
+//rozbudowac strone
